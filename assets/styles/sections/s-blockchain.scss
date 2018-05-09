@@ -1,0 +1,16 @@
+$namespace: '.s-blockchain';
+
+#{$namespace} {
+    min-height: 540px;
+    padding: 84px 0 230px;
+
+    background: url($imageUrl + '/sections/s-blockchain-background.png')
+                center center no-repeat #eac8b0;
+    background-size: cover;
+
+    &__title {
+        font: 400 30px/38px Akrobat;
+        color: #fff;
+        text-align: center;
+    }
+}

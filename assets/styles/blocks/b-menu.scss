@@ -1,0 +1,156 @@
+$namespace: '.b-menu';
+
+#{$namespace} {
+    position: relative;
+    height: 325px;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+
+        position: absolute;
+
+        font: 600 30px Akrobat;
+        color: $violet;
+        text-transform: uppercase;
+
+        transition: color .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #fff;
+
+            #{$namespace}__item-icon {
+                border-color: #fff;
+                box-shadow: 0 0 25px 7px rgba(195, 14, 255, .5);
+
+                &:before {
+                    border-color: $green;
+                }
+            }
+
+            &:first-child {
+                #{$namespace}__item-icon:after {
+                    background: url($imageUrl + '/menu/marketplace-active.png')
+                    center center no-repeat #19162b;
+                }
+            }
+
+            &:nth-child(2) {
+                #{$namespace}__item-icon:after {
+                    background: url($imageUrl + '/menu/labaratory-active.png')
+                    center center no-repeat #19162b;
+                }
+            }
+
+            &:nth-child(3) {
+                #{$namespace}__item-icon:after {
+                    background: url($imageUrl + '/menu/breed-active.png')
+                    center center no-repeat #19162b;
+                }
+            }
+
+            &:last-child {
+                #{$namespace}__item-icon:after {
+                    background: url($imageUrl + '/menu/battle-active.png')
+                    center center no-repeat #19162b;
+                }
+            }
+        }
+
+        &:first-child {
+            top: 0;
+            left: 17px;
+
+            #{$namespace}__item-icon:after {
+                background: url($imageUrl + '/menu/marketplace.png') center center no-repeat #19162b;
+            }
+        }
+
+        &:nth-child(2) {
+            top: 0;
+            right: 17px;
+
+            #{$namespace}__item-icon:after {
+                background: url($imageUrl + '/menu/labaratory.png') center center no-repeat #19162b;
+            }
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+            left: 0;
+
+            #{$namespace}__item-icon:after {
+                background: url($imageUrl + '/menu/breed.png') center center no-repeat #19162b;
+            }
+        }
+
+        &:last-child {
+            bottom: 0;
+            right: 0;
+
+            #{$namespace}__item-icon:after {
+                background: url($imageUrl + '/menu/battle.png') center center no-repeat #19162b;
+            }
+        }
+
+        &--reverse {
+            #{$namespace}__item-name {
+                margin-right: 0;
+                margin-left: 16px;
+            }
+        }
+    }
+
+    &__item-name {
+        margin-right: 16px;
+    }
+
+    &__item-icon {
+        display: inline-block;
+        position: relative;
+
+        width: 106px;
+        height: 106px;
+
+        border: 1px solid rgba(197, 159, 255, 0.3);
+        border-radius: 50%;
+        box-shadow: none;
+
+        transition: all .3s ease;
+
+        &:before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 13px;
+            left: 13px;
+
+            width: 77px;
+            height: 77px;
+
+            border: 5px solid #c59fff;
+            border-radius: 50%;
+
+            transition: border .3s ease;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 22px;
+            left: 22px;
+
+            width: 60px;
+            height: 60px;
+
+            background-color: #19162b;
+            border-radius: 50%;
+
+            transition: background .3s ease;
+        }
+    }
+}

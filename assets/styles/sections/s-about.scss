@@ -1,0 +1,32 @@
+.s-about {
+    padding: 22px 0 100px;
+    background-color: #1f2139;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 470px;
+    }
+
+    &__text-title {
+        margin-bottom: 25px;
+
+        font: 700 48px Akrobat;
+        color: $yellow;
+
+        span {
+            color: $violet;
+        }
+    }
+
+    &__text-description {
+        margin: 0;
+
+        font: 18px/24px Akrobat;
+        color: #fff;
+    }
+}

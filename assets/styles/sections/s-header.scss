@@ -1,0 +1,22 @@
+.s-header {
+    padding: 12px 0 45px;
+
+    background: url($imageUrl + '/header-background.jpg') center center no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin: 90px 0 20px;
+
+        font: 48px IntroCondBlackFree;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 0 0 30px;
+
+        font: 24px/28px IntroCondBlackFree;
+        color: #fff;
+        text-align: center;
+    }
+}

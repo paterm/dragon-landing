@@ -1,0 +1,26 @@
+.s-battle {
+    padding: 40px 0 380px;
+
+    background: url($imageUrl + '/sections/s-battle-background.jpg')
+                    center center no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 30px;
+
+        font: 700 48px Akrobat;
+        color: #c78efd;
+    }
+
+    &__description {
+        font: 18px/22px Akrobat;
+        color: #fff;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-evenly;
+
+        margin-top: 45px;
+    }
+}

@@ -1,0 +1,35 @@
+.b-deals-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    &__title {
+        margin-bottom: 15px;
+
+        font: 700 36px/38px Akrobat;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__hr {
+        display: inline-block;
+
+        width: 380px;
+        height: 2px;
+
+        margin-bottom: 25px;
+
+        background-color: #fff;
+    }
+
+    &__description {
+        margin: 0;
+
+        font: 18px/24px Akrobat;
+        color: #fff;
+        text-align: center;
+    }
+}

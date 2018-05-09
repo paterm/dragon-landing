@@ -1,0 +1,72 @@
+$namespace: '.b-things';
+
+#{$namespace} {
+    &__item {
+        position: relative;
+
+        padding: 1rem 30px !important;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: -92px;
+            left: -25px;
+
+            width: 342px;
+            height: 171px;
+
+            transition: background .3s ease;
+        }
+
+        &:not(:last-child):after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 64px;
+            left: 92.5%;
+
+            width: 45px;
+
+            border: 3px dashed #734d9f;
+        }
+
+        &:hover {
+            &:before {
+                background: url($imageUrl + '/b-things/b-things-background.png') center bottom no-repeat;
+            }
+
+            #{$namespace}__item-title {
+                border-color: #f17aff;
+                color: #fff;
+            }
+        }
+
+        &-title {
+            position: relative;
+
+            padding-bottom: 10px;
+
+            border-bottom: 5px solid $violet;
+
+            font: 700 30px Akrobat;
+            color: $violet;
+            text-align: center;
+            text-transform: uppercase;
+
+            transition: all .3s ease;
+            z-index: 1;
+        }
+
+        &-description {
+            font: 18px/24px Akrobat;
+            color: #e7c9ff;
+        }
+    }
+}

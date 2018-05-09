@@ -1,0 +1,62 @@
+$namespace: '.s-things';
+
+#{$namespace} {
+    position: relative;
+
+    padding: 70px 0 100px;
+
+    background-color: #402f56;
+
+    &__title {
+        margin-bottom: 65px;
+
+        font: 700 48px Akrobat;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__decorate-bottom,
+    &__decorate-top {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__decorate-top {
+        #{$namespace}__decorate-item {
+            position: absolute;
+            bottom: 100%;
+
+            transition: left .5s ease;
+
+            &:nth-child(2) {
+                left: 23%;
+                bottom: 25px;
+
+            }
+
+            &:last-child {
+                right: 200px;
+                bottom: -50px;
+            }
+        }
+    }
+
+    &__decorate-bottom {
+        bottom: 0;
+
+        #{$namespace}__decorate-item {
+            position: absolute;
+            top: 100%;
+
+            &:first-child {
+                left: 15%;
+                top: -70px;
+            }
+
+            &:last-child {
+                right: 0;
+                top: -128px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.s-begin-game {
+    padding: 40px;
+
+    background-color: #1f2139;
+
+    &__title {
+        margin-bottom: 25px;
+
+        font: 30px IntroCondBlackFree;
+        color: $violet;
+        text-align: center;
+    }
+}

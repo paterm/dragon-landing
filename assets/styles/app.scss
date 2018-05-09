@@ -1,0 +1,51 @@
+@import "variables";
+@import "fonts";
+
+html, body {
+    font-family: Akrobat, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+.b-container {
+    width: 1168px;
+    margin: 0 auto;
+}
+
+@import "blocks/b-menu";
+@import "blocks/b-button";
+@import "blocks/b-things";
+@import "blocks/b-card";
+@import "blocks/b-deals-card";
+@import "blocks/b-footer-menu";
+
+@import "sections/s-header";
+@import "sections/s-about";
+@import "sections/s-things";
+@import "sections/s-blockchain";
+@import "sections/s-features";
+@import "sections/s-battle";
+@import "sections/s-breed";
+@import "sections/s-deals";
+@import "sections/s-begin-game";
+@import "sections/s-footer";

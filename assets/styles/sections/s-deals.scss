@@ -1,0 +1,41 @@
+.s-deals {
+    position: relative;
+
+    height: 383px;
+
+    padding: 0 1rem;
+
+    background: url($imageUrl + '/sections/s-deals-background.jpg')
+            center center no-repeat;
+    background-size: cover;
+
+    &__grid {
+        display: flex;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__column {
+        flex: 1 1;
+        height: 100%;
+
+        &:first-child {
+            background-color: rgba(86, 51, 130, 0.76);
+        }
+        &:last-child {
+            background-color: rgba(88, 55, 102, 0.76);
+        }
+    }
+
+    &__content {
+        height: 100%;
+    }
+
+    .b-container {
+        height: 100%;
+    }
+}

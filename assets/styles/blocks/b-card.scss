@@ -1,0 +1,79 @@
+.b-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 245px;
+
+    padding: 10px 12px 30px;
+
+    background-color: #1f2139;
+    border: 2px solid #72417e;
+    border-radius: 8px;
+
+    text-align: center;
+
+    & + & {
+        margin-left: 90px;
+    }
+
+    &__egg {
+        position: relative;
+
+        width: 212px;
+        height: 212px;
+
+        margin: 0 auto 5px;
+        padding: 15px;
+
+        background-color: #1a162b;
+        border: 2px solid #393a60;
+        border-radius: 50%;
+
+        &-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 2px;
+            right: 0;
+
+            width: 44px;
+            height: 44px;
+
+            background: url($imageUrl + '/b-card/like.png');
+        }
+    }
+
+    &__info-title {
+        display: inline-block;
+
+        margin-bottom: 5px;
+
+        font: 600 18px Akrobat;
+        color: #796eb9;
+    }
+
+    &__info-items {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 180px;
+
+        margin: 0 auto;
+
+        font: 600 18px Akrobat;
+        color: #796eb9;
+
+        &-item {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.s-breed {
+    position: relative;
+
+    padding: 0 0 34px;
+    background-color: #402f56;
+
+    &__title {
+        position: relative;
+
+        margin-bottom: 30px;
+
+        font: 700 48px Akrobat;
+        color: #c78efd;
+    }
+
+    &__description {
+        font: 18px/22px Akrobat;
+        color: #fff;
+    }
+
+    &__image {
+        margin-top: 40px;
+    }
+
+    &__decorate {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        height: 200px;
+        bottom: 83%;
+
+        background: url($imageUrl + '/sections/s-breed-decorate.png');
+        background-size: cover;
+    }
+}

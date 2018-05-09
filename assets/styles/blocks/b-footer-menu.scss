@@ -1,0 +1,48 @@
+$namespace: '.b-footer-menu';
+
+#{$namespace} {
+    max-width: 850px;
+
+    &__item {
+        display: inline-block;
+
+        width: 280px;
+
+        &:hover {
+            #{$namespace}__item-link {
+                color: #a1ea81;
+            }
+        }
+
+        &--facebook {
+            #{$namespace}__item-link {
+                color: #6363f4;
+            }
+        }
+
+        &--reddit {
+            #{$namespace}__item-link {
+                color: #f26f51;
+            }
+        }
+
+        &--twitter {
+            #{$namespace}__item-link {
+                color: #489ae6;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            width: 100%;
+
+            padding: 7px 0;
+
+            font: 700 14px Akrobat;
+            color: #636392;
+            text-decoration: none;
+
+            transition: color .3s ease;
+        }
+    }
+}
